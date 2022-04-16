@@ -137,7 +137,7 @@ class Formulario:
             self.pagina3, text="Lista de Productos")
         self.labelframe3.grid(column=0, row=0, padx=5, pady=10)
         self.boton1 = ttk.Button(
-            self.labelframe3, text="Listado completo", command=self.listar)
+            self.labelframe3, text="Listado total", command=self.listar)
         self.boton1.grid(column=0, row=0, padx=4, pady=4)
         self.scrolledtext1 = st.ScrolledText(
             self.labelframe3, width=30, height=10)
@@ -147,8 +147,8 @@ class Formulario:
         respuesta = self.articulo1.recuperar_todos()
         self.scrolledtext1.delete("1.0", tk.END)
         for fila in respuesta:
-            self.scrolledtext1.insert(tk.END, "código:"+str(
-                fila[0])+"\nnombre:"+fila[1]+"\nprecio:"+str(fila[2])+"\nstock:"+str(fila[3])+"\n\n")
+            self.scrolledtext1.insert(tk.END, "Código:"+str(
+                fila[0])+"\nNombre:"+fila[1]+"\nPrecio:"+str(fila[2])+"\nStock:"+str(fila[3])+"\n\n")
 
 
 aplicacion1 = Formulario()
