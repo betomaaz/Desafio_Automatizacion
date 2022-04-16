@@ -128,7 +128,7 @@ class Formulario:
             self.descripcion.set('')
             self.precio.set('')
             mb.showinfo("Información",
-                        "No existe un cliente con ese rut")
+                        "No existe un cliente con dicho rut")
 
     def listado_completo(self):
         self.pagina3 = ttk.Frame(self.cuaderno1)
