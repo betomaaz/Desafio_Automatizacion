@@ -6,7 +6,7 @@ import conexion
 import numpy as np
 
 
-class FormularioProductos:
+class Formulario:
     def __init__(self):
         self.articulo1 = conexion.Conexion()
         self.ventana1 = tk.Tk()
@@ -151,4 +151,4 @@ class FormularioProductos:
                 fila[0])+"\nnombre:"+fila[1]+"\nprecio:"+str(fila[2])+"\nstock:"+str(fila[3])+"\n\n")
 
 
-aplicacion1 = FormularioProductos()
+aplicacion1 = Formulario()
